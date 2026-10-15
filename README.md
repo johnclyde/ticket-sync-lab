@@ -2,11 +2,13 @@
 
 A TypeScript service that keeps a CRM's event totals consistent with ticket orders and partial refunds, including when messages repeat, arrive late, or fail halfway through delivery.
 
-This is a new, original demonstration with synthetic ticketing and CRM contracts. It does not contain customer data, private employer code, or a claim of prior production deployment. The CRM adapter is not a HubSpot or Salesforce implementation.
+Two runnable integrations live here: a ticketing-to-CRM failure exercise using synthetic contracts, and a real WordPress REST feed with optional Resend change notifications. Both use original code. No customer data or private employer code is included.
+
+Start with the [live feed guide](docs/live-feed.md) to fetch public WordPress metadata without credentials. The new services in this repository are not yet deployed in production.
 
 ## Run the demonstration
 
-Use **Node.js 24.12 or newer within the 24.x LTS line**. There are no runtime dependencies, API keys, accounts, or cloud charges.
+Use **Node.js 24.12 or newer within the 24.x LTS line**. The synthetic demo has no runtime dependencies, API keys, accounts, or cloud charges.
 
 ```sh
 git clone https://github.com/johnclyde/ticket-sync-lab.git

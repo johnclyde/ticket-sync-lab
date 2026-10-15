@@ -2,15 +2,21 @@
   "name": "ticket-sync-lab",
   "version": "0.1.0",
   "private": true,
-  "description": "An original ticketing-to-CRM integration demonstration with reproducible failure drills.",
+  "description": "Ticket synchronization failure drills and a live WordPress-to-Resend integration with durable delivery.",
   "type": "module",
   "license": "MIT",
-  "engines": { "node": ">=24.12 <25" },
+  "engines": {
+    "node": ">=24.12 <25"
+  },
   "scripts": {
     "start": "node src/server.ts",
     "demo": "node src/demo.ts",
     "test": "node --test test/*.test.ts",
-    "check": "tsc --noEmit"
+    "check": "tsc --noEmit",
+    "feed": "node src/feed-cli.ts"
   },
-  "devDependencies": { "@types/node": "24.19.2", "typescript": "7.0.2" }
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "typescript": "7.0.2"
+  }
 }
